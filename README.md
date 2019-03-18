@@ -57,11 +57,10 @@ The data is in a [zip](https://drive.google.com/uc?id=1ehyrYBQ5rbQQe6yL4XbLWe3FM
 | rnn_cnn2_model  | CNN-LSTM   | 1,346,021            | Yes          | 31                | 78%                         | 96%                             |
 
 ## Transfer Learning Models (CNN + RNN)
+### Mobilenet model is considered as its parameter size is less compared to Inception and Resnet models
 
 | Model Name        | Number of parameters | Augment Data | Model Size(in MB) | Highest validation accuracy | Corres-ponding Training accuracy | Observations                                                                                                                                     |
 |-------------------|----------------------|--------------|-------------------|-----------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | rnn_cnn_tl_model  | 3,840,453            | Yes          | 20.4              | 56%                         | 85%                              | For this experiment, Mobilenet layer weights are not trained. Validation accuracy is very poor. So let’s train mobilenet layer’s weights as well |
 | rnn_cnn_tl2_model | 3,692,869            | Yes          | 42.3              | 97%                         | 99%                              | We get a better accuracy on training mobilenet layer’s weights as well.                                                                          |
-
-## Consolidated Final Models :
 
